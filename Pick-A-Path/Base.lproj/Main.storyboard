@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Whu-nY-gyG">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page A-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Page A" id="BYZ-38-t0r" customClass="ViewController" customModule="Pick_A_Path" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crf-sw-qYw">
+                                <rect key="frame" x="20" y="72" width="374" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page A" id="Qua-PC-VMc">
+                        <barButtonItem key="leftBarButtonItem" title="pageChoiceA" id="nQZ-64-PmZ">
+                            <connections>
+                                <action selector="pageAChoiceAClicked:" destination="BYZ-38-t0r" id="n5S-nj-kzp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="pageChoiceB" id="DSl-Pk-8zf">
+                            <connections>
+                                <action selector="pageAChoiceBClicked:" destination="BYZ-38-t0r" id="KVw-bV-Yav"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pageAChoiceABtn" destination="nQZ-64-PmZ" id="sK3-49-XQv"/>
+                        <outlet property="pageAChoiceBBtn" destination="DSl-Pk-8zf" id="RwA-DC-GLG"/>
+                        <outlet property="pageAText" destination="crf-sw-qYw" id="RKH-c9-0Jf"/>
+                        <outlet property="pageATitle" destination="Qua-PC-VMc" id="pEZ-7e-uTV"/>
+                        <segue destination="r4H-m4-6Za" kind="show" identifier="showPageB" id="sks-b6-pro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.072463768116" y="122.28260869565219"/>
+        </scene>
+        <!--Page B-->
+        <scene sceneID="XW1-nx-QSN">
+            <objects>
+                <viewController storyboardIdentifier="Page B" id="r4H-m4-6Za" customClass="PageBViewController" customModule="Pick_A_Path" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wAC-mn-zZm"/>
+                        <viewControllerLayoutGuide type="bottom" id="q8u-4g-mdx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kvc-gP-4fS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyN-Ni-Kt5">
+                                <rect key="frame" x="20" y="72" width="374" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page B" id="iSX-i8-zrp">
+                        <barButtonItem key="leftBarButtonItem" title="pageChoiceA" id="y93-2g-yjT">
+                            <connections>
+                                <action selector="pageBChoiceAClicked:" destination="r4H-m4-6Za" id="ijx-9E-TfM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="pageChoiceB" id="Tqq-Or-n8c">
+                            <connections>
+                                <action selector="pageBChoiceBClicked:" destination="r4H-m4-6Za" id="YQT-a6-9XS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pageBChoiceABtn" destination="y93-2g-yjT" id="xr6-jl-iPA"/>
+                        <outlet property="pageBChoiceBBtn" destination="Tqq-Or-n8c" id="ay9-8w-TxX"/>
+                        <outlet property="pageBText" destination="xyN-Ni-Kt5" id="agh-0D-AzE"/>
+                        <outlet property="pageBTitle" destination="iSX-i8-zrp" id="jHf-Y7-l8B"/>
+                        <segue destination="snH-UP-IuF" kind="show" identifier="showPageC" id="Cfc-U2-phG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cd7-kZ-kKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="122.28260869565219"/>
+        </scene>
+        <!--Page C-->
+        <scene sceneID="giM-Ln-Unl">
+            <objects>
+                <viewController storyboardIdentifier="Page C" id="snH-UP-IuF" customClass="PageCViewController" customModule="Pick_A_Path" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="euX-QJ-EQF"/>
+                        <viewControllerLayoutGuide type="bottom" id="V5K-bC-4r6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="91x-R0-mwu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buk-Mh-vOc">
+                                <rect key="frame" x="20" y="72" width="374" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page C" id="gfO-RY-6gD">
+                        <barButtonItem key="leftBarButtonItem" title="Restart" id="tB8-aG-boB">
+                            <connections>
+                                <action selector="restartBtnClicked:" destination="snH-UP-IuF" id="6vI-55-LLt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pageCRestartBtn" destination="tB8-aG-boB" id="s4h-sE-f5X"/>
+                        <outlet property="pageCText" destination="buk-Mh-vOc" id="7uh-7B-8N4"/>
+                        <outlet property="pageCTitle" destination="gfO-RY-6gD" id="XPe-sG-bl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wM-Sf-ucY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2544.9275362318845" y="122.28260869565219"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NB6-r7-DXR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Whu-nY-gyG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hx1-iZ-iwA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Ze-Rb-hWt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1j-J8-7sq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="123"/>
+        </scene>
+    </scenes>
+</document>
